@@ -103,18 +103,34 @@ And you'll see something like this.
 
 ![](https://i.imgur.com/9oOQq4F.png)
 
-When you type a command that _doesn't_ include a slash `/` character, these `PATH` directories are searched one after another. Once a file that matches the command is found, the searching stops and the corresponding file is run.
+When you type a command that _doesn't_ include a slash `/` character, these `PATH` directories are searched one after another. Once an executable file that matches the command is found, the searching stops and the matched file is executed.
 
-Notice the `/usr/local/bin` directory is listed before the following directories.
+If no matching executable file is found, the shell will display an error like this.
 
-- `/usr/bin`
-- `/bin`
-- `/usr/sbin`
-- `/sbin`
+![](https://i.imgur.com/zbktAR4.png)
 
-This means the `/usr/local/bin` directory has priority over all later searched directories.
+In addition to the error message, both the command and the prompt's working directory turned red. Fish is communicating two distinct things here.
 
-Since Homebrew installs new commands to the `/usr/local/bin` directory, Homebrew-installed commands will be preferred over the pre-installed ones. In upcoming sections, you'll use Homebrew to install additional commands that override the pre-installed commands that come with Mac OS X.
+1. The command you're thinking about executing doesn't exist.
+2. The last executed command failed for some reason.
+
+Don't worry, the prompt's working directory will turn blue again once a command is successfully executed.
+
+![](https://i.imgur.com/EtkLPyT.png)
+
+By the way, notice the `/usr/local/bin` directory is listed first. This means it has priority over the other searchable directories. This is important because Homebrew installs commands to the `/usr/local/bin` directory while Apple pre-installs commands to the other searchable directories. In other words, the shell will prefer Homebrew-installed commands over the Apple-installed ones.
+
+Believe it or not, this is a very useful feature because Apple doesn't update its commands very often. In upcoming sections, you'll use Homebrew to install newer versions of pre-installed commands.
+
+When you want to know where a command lives, you can look it up using the `which` command.
+
+```
+which echo
+```
+
+And you'll see something like this.
+
+![](https://i.imgur.com/5xgj2DQ.png)
 
 
 #### [⇐ Previous](4_fish.md) | [Next ⇒](6_git.md)
