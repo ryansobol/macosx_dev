@@ -4,9 +4,11 @@
 
 Included in Mac OS X is the **Terminal**—an app that runs a Unix shell.
 
-A **Unix shell** is a command line user interface between you and your computer's operating system. You're probably most familiar with the graphical user interface of an operating system. While that's technically a shell too, most developers think of the textual, command line interface when they hear to word _shell_. Mac OS X blends both the graphical and the command line interfaces beautifully which is why it's so popular with developers.
+A **Unix shell** is a command line user interface between you and your computer's operating system. You're probably most familiar with the graphical user interface of an operating system. While that's technically a shell too, most developers think of the textual, command line interface when they hear to word _shell_. Mac OS X blends both the graphical and the command line interfaces beautifully which is why it's so popular among developers.
 
-The first Unix shell was released in 1971 and yet developers continue to incorporate them into their workflows. That's because Unix shells are both interactive and scriptable. In other words, the same commands that control an operating system from the command line can be included in a script file. A **script file** is commonly used to automate repetitive tasks and increase developer productivity. In this guide, you'll download and run script files to speed up the installation and configuration of your development environment.
+The first Unix shell was released in 1971. Decades later, developers continue to incorporate command line shells into their workflow because they're interactive and scriptable. In other words, the same commands that control an operating system from an interactive command line can be included in an executable script file. While a **script file** is simply a file that contains a sequence of commands, it's the crux of automating repetitive tasks and increasing developer productivity.
+
+In this guide, you'll download and run script files to speed up the installation and configuration of your development environment.
 
 ### Discover the Terminal
 
