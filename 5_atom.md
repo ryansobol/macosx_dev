@@ -89,7 +89,7 @@ And you'll see something like this.
 
 ### Discover the `PATH` environment variable
 
-Like most shells, Fish relies on the `PATH` environment variable to specify a set of directories where other commands can be found.
+Like most shells, Fish relies on the `PATH` environment variable to specify a list of directories where commands can be found. Fortunately, the `PATH` environment variable's value is automatically set whenever you start a new shell session. :tropical_drink:
 
 To see the value of the `PATH` environment variable, run the following command.
 
@@ -103,7 +103,7 @@ And you'll see something like this.
 
 ![](https://i.imgur.com/9oOQq4F.png)
 
-When you type a command that **doesn't** include a slash `/` character, these `PATH` directories are searched one after another. Once a file that matches the command is found, the searching stops and the corresponding file is run.
+When you type a command that _doesn't_ include a slash `/` character, these `PATH` directories are searched one after another. Once a file that matches the command is found, the searching stops and the corresponding file is run.
 
 Notice the `/usr/local/bin` directory is listed before the following directories.
 
