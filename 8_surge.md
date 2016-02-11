@@ -155,7 +155,9 @@ touch CNAME
 
 Noticed a red `✖` is back, indicating your staging area is dirty.
 
-Back in Atom, open the `CNAME` file and type in `GITHUB-USERNAME.surge.sh` replacing `GITHUB-USERNAME` with your actual GitHub username. Save the file and it should look something like this.
+Back in Atom, open the `CNAME` file and type in `GITHUB-USERNAME.surge.sh` replacing `GITHUB-USERNAME` with your actual GitHub username in **lower case** form. Save the file and it should look something like this.
+
+**TIP:** The domain name in the CNAME file must be in lower case form.
 
 ![](https://i.imgur.com/BRuK4kA.png)
 
