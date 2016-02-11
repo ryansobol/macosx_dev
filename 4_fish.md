@@ -49,6 +49,10 @@ To verify the new prompt is installed correctly, relaunch the Terminal. You'll s
 
 ![](https://imgur.com/kBsLiZK.png)
 
+**TIP:** Run the `rm -r ~/.git` command if your Fish prompt looks like the this instead.
+
+![](https://i.imgur.com/fAO3vje.png)
+
 Here's a quick break down of what you're seeing.
 
 | Component             | Description                            |
