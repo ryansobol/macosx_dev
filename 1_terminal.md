@@ -41,18 +41,22 @@ Go ahead and type `uname` which is a command that will display your operating sy
 
 Here's what happened:
 
-1. The shell told the Terminal to display a prompt.
-1. The shell asked the Terminal to wait for you to type a command.
-1. You then typed the word `uname` which appeared after the prompt.
-1. You pressed the `Enter` key which triggered the shell to accept your input.
-1. The shell searched for a program called `uname`.
-1. Once found, the shell launched the `uname` program and handed it control over the Terminal.
-1. While running, the `uname` program told the Terminal to display the word `Darwin`.
-1. Once finished, the `uname` program exited and handed control of the Terminal back to the shell.
-1. The shell told the Terminal to display another prompt.
-1. Once displayed, the shell began waiting for your next command.
+![](https://i.imgur.com/YZmrVbh.png)
 
-This is called a read-evaluate-print loop or **REPL** for short.
+1. The User launched the Terminal.
+1. The Terminal launched a new Shell session.
+1. The Shell told the Terminal to display a prompt.
+1. The Shell told the Terminal to wait for the User to type a command.
+1. The User typed in `uname`, which appeared after the prompt, and then pressed the `Enter` key.
+1. The Terminal told the Shell that the User wants to run a command called `uname`.
+1. The Shell searched for and launched a program called `uname`.
+1. The Shell handed control over the Terminal to the `uname` program.
+1. The `uname` program told the Terminal to display the word `Darwin`.
+1. The `uname` program exited and handed control of the Terminal back to the Shell.
+1. The Shell told the Terminal to display another prompt.
+1. The Shell told the Terminal to wait for the User to type a command.
+
+This sequence of events is known as a read-evaluate-print loop or **REPL** for short. This is just one example of a larger concept called the **Request-Response Cycle**. The cycle of sending a request and processing a response is at the core of web development.
 
 ### Change the Terminal Profile
 
